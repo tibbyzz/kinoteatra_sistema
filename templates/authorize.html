@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/authorize.css') }}">
+    <title>Autorizēties</title>
+</head>
+<body class="auth">
+    <h1 class="header">Autorizēties</h1>
+    <form action="/authorize" method="POST">
+        <label for="email">E-pasts:</label>
+        <input type="text" id="email" name="email" required>
+        <br>
+        <label for="password">parole:</label>
+        <input type="text" id="password" name="password" required>
+        <button type="submit" class="login">Ienākt</button>
+    </form>
+    <p>
+        <a href="/register_worker" class="button-link"> Registrēt darbinieku </a> </h1>
+        <a href="/" class="button" >atgriezties</a>
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reserveInfo.css') }}">
+    <title>Informācijas ievade</title>
+</head>
+<body class="rezervacija">
+    <h1 class="header">Ievadi savu informāciju!</h1>
+    <form action="/reserveInfo" method="POST">
+        <label for="name_r">Vārds:</label>
+        <input type="text" id="name_r" name="name_r" required><br>
+        <label for="last_name_r">Uzvārds:</label>
+        <input type="text" id="last_name_r" name="last_name_r" required><br>
+        <label for="mobile_number_r">Telefona numurs:</label>
+        <input type="text" id="mobile_number_r" name="mobile_number_r" required><br>
+        <label for="films_id">Filma:</label>
+        <select name="films_id" id="films_id">
+            {% for films in films %}
+                <option value="{{ films[0] }}">{{ films[1] }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <button type="submit" class="button">Rezervēt</button>
+    </form>
+    <a href="/all_seansi" class="button-link">Atgriezties</a>
+</body>
+</html>

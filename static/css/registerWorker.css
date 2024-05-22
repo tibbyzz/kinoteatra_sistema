@@ -1,0 +1,75 @@
+.registration, body {
+    background-color:#b5838d;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px;
+    margin-top: 0px;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #90657a;
+    color: #FFCDB2;
+    font-size: 40px;
+}
+
+form {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffcdb2;
+    font-weight:bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 9px;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block; 
+    padding: 30px 40px; 
+    background-color:#E5989B ; 
+    color: #FFCDB2; 
+    text-decoration: none; 
+    border: 10px;
+    border-radius: 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-right: 350px;
+    margin-left: 200px;
+    font-weight:bold;
+    font-size: 40px;
+    position:relative;
+    top: 30px; 
+    left:75px;
+}
+
+.button-link {
+    display: inline-block; 
+    padding: 30px 40px; 
+    background-color:#E5989B ; 
+    color: #FFCDB2; 
+    text-decoration: none; 
+    border: 10px;
+    border-radius: 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-right: 350px;
+    margin-left: 200px;
+    font-weight:bold;
+    font-size: 40px;
+    position:relative;
+    top: 40px; 
+    left: 600px;
+}
+
+.button-link:hover { 
+    background-color: #e0aaac; 
+} 
+
+.button:hover { 
+    background-color: #e0aaac; 
+} 

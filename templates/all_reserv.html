@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/allReserve.css') }}">
+    <title>Rezervāciju saraksts</title>
+</head>
+<body class="allReserve">
+    <h1 class="header">Rezervāciju saraksts</h1>
+    <ul>
+    {% for reservations in reservations %}
+        <li>
+            Vārds: {{ reservations[1] }} <br>
+            Uzvārds: {{ reservations[2] }} <br>
+            Tālrunis: {{ reservations[3] }} <br>
+            Filma: {{ reservations[0] }}
+        </li>
+    {% endfor %}
+    </ul>
+    <a href="/manage" class="button-link">Atpakaļ</a>
+</body>
+</html>

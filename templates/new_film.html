@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/newFilm.css') }}">
+    <title>Jauna filma</title>
+</head>
+<body class="newFilm">
+    <h1 class="header">Pievienot filmu</h1>
+    <form action="/new_film" method="POST">
+        <label for="film_name">Filmas nosakumums: </label>
+        <input type="text" id="film_name" name="film_name" required>
+        <br>
+        <label for="film_length">Filmas garums :</label>
+        <input type="text" id="film_length" name="film_length" required>
+        <br>
+        <label for="film_genre">Filmas žanrs: </label>
+        <input type="text" id="film_genre" name="film_genre" required>
+        <br>
+        <label for="sub_lang">Subtitru valoda: </label>
+        <input type="text" id="sub_lang" name="sub_lang" required>
+        <br>
+        <label for="audio_lang">Audio valoda: </label>
+        <input type="text" id="audio_lang" name="audio_lang" required>
+        <br>
+        <label for="distributor">Izplatītājs: </label>
+        <input type="text" id="distributor" name="distributor" required>
+        <br>
+        <label for="director">Režisors: </label>
+        <input type="text" id="director" name="director" required>
+        <br>
+        <label for="film_description">Filmas apraksts: </label>
+        <input type="text" id="film_description" name="film_description" required>
+        <br>
+        <button type="submit" class="button">Saglabāt</button>
+    </form>
+    <a href="/manage" class="button-link">Atpakaļ</a>
+</body>
+</html>

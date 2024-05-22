@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/allFilms.css') }}">
+    <title>Filmu saraksts</title>
+</head>
+<body class="allFilms">
+    <h1 class="header">Filmu saraksts</h1>
+    <ul>
+    {% for films in films %}
+        <li>
+            filmas nosaukums: {{ films[1] }}<br>
+            filmas garums: {{films[2]}}<br>
+            filmas žanrs: {{ films[3] }}<br>
+            subtitru valoda: {{ films[4] }}<br>
+            audio valoda: {{ films[5] }}<br>
+            izplatītajs: {{ films[6] }}<br>
+            Režisors: {{ films[7] }}<br>
+            Filmas apraksts: {{ films[8] }}
+        </li>
+    {% endfor %}
+    </ul>
+    <a href="/manage" class="button-link">Atpakaļ</a>
+</body>
+</html>

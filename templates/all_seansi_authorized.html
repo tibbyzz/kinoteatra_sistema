@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/allSeansiAuth.css') }}">
+    <title>Filmu seansi</title>
+</head>
+<body class="seansiAuth">
+    <h1 class="header">Visi seansi </em></h1>
+    <ul>
+    {% for seansi in seansi %}
+        <li>
+            Filma: {{ seansi[0] }}<br>
+            Pieejamās sēdvietas: {{ seansi[1] }}<br>
+            Aizņēmtās sēdvietas: {{ seansi[2] }}<br>
+            Laiks: {{ seansi[3] }}<br>
+            Datums: {{ seansi[4] }}<br>
+            Filmas apraksts: {{ seansi[5] }}<br>
+        </li>
+    {% endfor %}
+        
+    </ul>
+    <a href="/manage" class="button-link">Atpakaļ</a>
+</body>
+</html>

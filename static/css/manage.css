@@ -1,0 +1,34 @@
+.manage, body {
+    background-color:#b5838d;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px;
+    margin-top: 0px;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #90657a;
+    color: #FFCDB2;
+    font-size: 40px;
+}
+
+.button-link { 
+    display: inline-block; 
+    padding: 20px 30px; 
+    background-color:#E5989B ; 
+    color: #FFCDB2; 
+    text-decoration: none; 
+    border: 10px, #B5838D; 
+    border-radius: 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    margin-right: 110px;
+    margin-left: 5px;
+    font-weight:bold
+    
+} 
+   
+.button-link:hover { 
+    background-color: #e0aaac; 
+} 

@@ -1,0 +1,30 @@
+.start, body {
+    background-color:#90657A ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 250%;
+    text-align: center;
+    margin: 300px;
+    
+}
+.start, h1 {
+    color: #FFCDB2
+}
+
+.button-link { 
+  display: inline-block; 
+  padding: 20px 30px; 
+  background-color:#E5989B ; 
+  color: #FFCDB2; 
+  text-decoration: none; 
+  border: 10px, #B5838D; 
+  border-radius: 15px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  margin-right: 110px;
+  margin-left: 100px;
+  font-weight:bold
+} 
+ 
+.button-link:hover { 
+  background-color: #e0aaac; 
+} 

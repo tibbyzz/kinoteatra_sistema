@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registerWorker.css') }}">
+    <title>Reģistrācija</title>
+</head>
+<body class="registration">
+    <h1 class="header">Reģistrēties</h1>
+    <form action="/register_worker" method="POST">
+        <label>Vārds:</label>
+        <input type="text" name="workerName" required>
+        <br>
+        <label>Uzvārds:</label>
+        <input type="text" name="workerLastName" required>
+        <br>
+        <label>E-pasts:</label>
+        <input type="text" name="email" required>
+        <br>
+        <label>Numurs:</label>
+        <input type="text" name="workerMobile" required>
+        <br>
+        <label for="password">Parole:</label>
+        <input type="text" name="password" required>
+        <br>
+        <button type="submit" class="button">Reģistrēt</button>
+    </form>
+    <p>
+      <a href="/authorize" class="button-link">atgriezties</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Filmu seansi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/allSeansi.css') }}">
+</head>
+<body class="seansi">
+    <h1 class="header">Seansi </em></h1>
+    <ul>
+    {% for seansi in seansi %}
+        <li>
+            Filma: {{ seansi[0] }}<br>
+            Pieejamās sēdvietas: {{ seansi[1] }}<br>
+            aizņemtas sēdvietas: {{ seansi[2] }}<br>
+            Laiks: {{ seansi[3] }}<br>
+            Datums: {{ seansi[4] }}<br>
+            Filmas apraksts: {{ seansi[5] }}<br>
+        </li>
+    {% endfor %}
+    </ul>
+        <a href="/" class="button-link">Atgriezties</a>
+        <a href="/reserveInfo" class="button-link">Rezervēt</a>
+</body>
+</html>

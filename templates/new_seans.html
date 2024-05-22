@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/newSeans.css') }}">
+    <title>Jauns seanss</title>
+</head>
+<body class="newSeans">
+    <h1 class="header">Pievienot seansu</h1>
+    <form action="/new_seans" method="POST">
+        <label for="available_seats">Pieejamās sēdvietas :</label>
+        <input type="text" id="available_seats" name="available_seats" required>
+        <br>
+        <label for="taken_seats">Aizņemtās sēdvietas :</label>
+        <input type="text" id="taken_seats" name="taken_seats" required>
+        <br>
+        <label for="time">Laiks :</label>
+        <input type="text" id="time" name="time" required>
+        <br>
+        <label for="date">Datums :</label>
+        <input type="text" id="date" name="date" required>
+        <br>      
+        <label for="films_id">Filma:</label>
+        <select name="films_id" id="films_id">
+            {% for films in films %}
+                <option value="{{ films[0] }}">{{ films[1] }}</option>
+            {% endfor %}
+        </select>
+        <br>      
+        <button type="submit" class="button">Saglabāt</button>
+    </form>
+    <a href="/manage" class="button-link">Atpakaļ</a>
+</body>
+</html>
